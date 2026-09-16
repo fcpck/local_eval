@@ -1,0 +1,41 @@
+{
+  "paths": {
+    "test_set": "C:/Users/l30075012/Downloads/20条测试集.jsonl",
+    "system_prompt": "C:/Users/l30075012/Downloads/system_prompt_v8.8.jsonl",
+    "judge_template": "C:/Users/l30075012/Downloads/裁判模型 (正向only)-中文-最后一轮(解释+证据).jsonl",
+    "rubric_sets": {
+      "grading": "C:/Users/l30075012/Downloads/分级准确率rubrics.json",
+      "doctor_pref": "C:/Users/l30075012/Downloads/医生偏好rubrics.json"
+    },
+    "out_dir": "D:/PycharmProject/git/Health_Management_Diabetes/local_eval/output",
+    "data_dir": "D:/PycharmProject/git/Health_Management_Diabetes/local_eval/data",
+    "logs_dir": "D:/PycharmProject/git/Health_Management_Diabetes/local_eval/logs"
+  },
+  "crawl": {
+    "infer_id": "",
+    "model_name": "",
+    "models_to_crawl": [],
+    "concurrency": 3,
+    "timeout": 600,
+    "max_retries": 3,
+    "max_tokens": 65536,
+    "save_interval": 10
+  },
+  "judge": {
+    "url": "http://onlineservice-green.cn-east-4.roma.huawei.com:8088/v2/infer/SERVICE_ID/v1/chat/completions",
+    "model_name": "qwen36_35b",
+    "bearer_token": "REPLACE_WITH_BEARER_TOKEN",
+    "concurrency": 30,
+    "timeout": 300,
+    "max_tokens": 8192,
+    "stream": false,
+    "max_retries": 3,
+    "max_retries_total": 2,
+    "save_interval": 50
+  },
+  "report": {
+    "single_examples": 5
+  },
+  "rubric_source": "all",
+  "run_tag": "auto"
+}

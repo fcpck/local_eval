@@ -1,0 +1,20 @@
+# 运行时配置（含真实 token，不提交；使用 config.example.json 作为模板）
+config.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 生成物 / 中间产物
+output/
+logs/
+data/crawled/
+*.txt.tmp
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
